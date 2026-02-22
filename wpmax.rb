@@ -5,21 +5,21 @@
 class Wpmax < Formula
   desc "Docker-based WordPress site manager"
   homepage "https://github.com/maxcelos/wpmax"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.2/wpmax_0.1.2_darwin_amd64.tar.gz"
-      sha256 "eaa50a3350e5efd3f817e8a75a5288055a1a054730af6e7044848eb62e300c09"
+      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.3/wpmax_0.1.3_darwin_amd64.tar.gz"
+      sha256 "1fa02206601d4dce082fa897ebf3292e8199a7b7ac0e352888e3142ea3b0ab43"
 
       define_method(:install) do
         bin.install "wpmax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.2/wpmax_0.1.2_darwin_arm64.tar.gz"
-      sha256 "09f626757bc54ba33df6960585a7ec2fb242f8831e76311b0321772d77d9684f"
+      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.3/wpmax_0.1.3_darwin_arm64.tar.gz"
+      sha256 "b46d35dff2b74b4c842bac4237e839fdac607f37846eda60a0f435b0d07c8010"
 
       define_method(:install) do
         bin.install "wpmax"
@@ -29,15 +29,15 @@ class Wpmax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.2/wpmax_0.1.2_linux_amd64.tar.gz"
-      sha256 "9d19d63294170909c080a7d59433e4c91cc5c6676bbd290401d101e8a7443bed"
+      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.3/wpmax_0.1.3_linux_amd64.tar.gz"
+      sha256 "0cc7fea1ee76d66791238933417aeab53c89dce9a62ce6f877cc2d9b0b85f605"
       define_method(:install) do
         bin.install "wpmax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.2/wpmax_0.1.2_linux_arm64.tar.gz"
-      sha256 "553a2c576877e0953ce0bce8585801305132258ef69c4af54d5f000590521829"
+      url "https://github.com/maxcelos/wpmax/releases/download/v0.1.3/wpmax_0.1.3_linux_arm64.tar.gz"
+      sha256 "a77750a4cddfe3ad646fa7b7465f3c31db3481cfc936c23df9e841c3baa0fe33"
       define_method(:install) do
         bin.install "wpmax"
       end
