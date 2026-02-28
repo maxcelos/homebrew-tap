@@ -3,7 +3,7 @@ cask "herdmax" do
   name "herdmax"
   desc "Local dev reverse proxy manager for Docker projects"
   homepage "https://github.com/maxcelos/herdmax"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "herdmax" do
   on_macos do
     on_intel do
       url "https://github.com/maxcelos/herdmax/releases/download/v#{version}/herdmax_#{version}_darwin_amd64.tar.gz"
-      sha256 "924797c968ad6ac5d948e1b29bf8e4fc742192b24f86766666324be1255ceb4f"
+      sha256 "55c5099e096ad121c702595249462d53c4a8c7ac461ae40e7d348060459f2c02"
     end
     on_arm do
       url "https://github.com/maxcelos/herdmax/releases/download/v#{version}/herdmax_#{version}_darwin_arm64.tar.gz"
-      sha256 "1c674c723bd96eaefa15a84b5e2fbc92f10f8d70755057c68903cf6d8f7d5f18"
+      sha256 "f6268f6f42706f0b1862810f0be119d072bfa3f7b7665d6de52ae32862bba4e9"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/maxcelos/herdmax/releases/download/v#{version}/herdmax_#{version}_linux_amd64.tar.gz"
-      sha256 "ede029adfa8683a922cddf0bee78e535860a42ce2fe64d3975818f94fc0ba2c8"
+      sha256 "74a61bb308389f3c9e9af089ae5f0257aad66600333b4f1724795f33b4b7f9ff"
     end
     on_arm do
       url "https://github.com/maxcelos/herdmax/releases/download/v#{version}/herdmax_#{version}_linux_arm64.tar.gz"
-      sha256 "d5ec7c3c8ba6807635caed5db80781b226714ce08ec9dfa2448fdd1e48047061"
+      sha256 "4bdaaba9818426bf2b8295b816cbf91279d02c484034ef23d326de94bfa4435f"
     end
   end
 
