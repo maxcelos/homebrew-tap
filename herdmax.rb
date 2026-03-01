@@ -5,21 +5,21 @@
 class Herdmax < Formula
   desc "Local dev reverse proxy manager for Docker projects"
   homepage "https://github.com/maxcelos/herdmax"
-  version "0.1.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maxcelos/herdmax/releases/download/v0.1.0/herdmax_0.1.0_darwin_amd64.tar.gz"
-      sha256 "48f0a4c6d79db25d907e7191b772494d8d6c88f6a9380205652cf9c5c3e7fe2a"
+      url "https://github.com/maxcelos/herdmax/releases/download/v0.3.1/herdmax_0.3.1_darwin_amd64.tar.gz"
+      sha256 "171baac04144ce68f27f1d81712e110916d3aee5e108ce640484a3a222cfa087"
 
       define_method(:install) do
         bin.install "herdmax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/maxcelos/herdmax/releases/download/v0.1.0/herdmax_0.1.0_darwin_arm64.tar.gz"
-      sha256 "51d630bbd8c6bdaa47acfa0e0b863d13b8110b29643e716d8782ad8f12398342"
+      url "https://github.com/maxcelos/herdmax/releases/download/v0.3.1/herdmax_0.3.1_darwin_arm64.tar.gz"
+      sha256 "83e11defbfd4dfde34647839f87dedb872aedaccf0807a32d9e9091b3285d973"
 
       define_method(:install) do
         bin.install "herdmax"
@@ -29,15 +29,15 @@ class Herdmax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxcelos/herdmax/releases/download/v0.1.0/herdmax_0.1.0_linux_amd64.tar.gz"
-      sha256 "ea749b336a632d01b5f7de2a67a4987aaf064a8a8e98f3dcd724b2f978037355"
+      url "https://github.com/maxcelos/herdmax/releases/download/v0.3.1/herdmax_0.3.1_linux_amd64.tar.gz"
+      sha256 "a7c8ed335ff23c0b3214fb7a0417ce8de6def6996baed223133846227ec99a1f"
       define_method(:install) do
         bin.install "herdmax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxcelos/herdmax/releases/download/v0.1.0/herdmax_0.1.0_linux_arm64.tar.gz"
-      sha256 "cc5ef47948906873c9ed7559474b66315a018cbb1d2f97799b0549e44e27fb85"
+      url "https://github.com/maxcelos/herdmax/releases/download/v0.3.1/herdmax_0.3.1_linux_arm64.tar.gz"
+      sha256 "d59a85af8d9e17186d1d69a9796310cc941448172a9118fa2345448db0f720b3"
       define_method(:install) do
         bin.install "herdmax"
       end
